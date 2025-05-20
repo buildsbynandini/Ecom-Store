@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ProductDetails from './pages/ProductDetails';
-import Cart from './Cart';
+import Cart from './pages/Cart';
 import { useState } from 'react';
 
 
