@@ -21,7 +21,7 @@ function addToCard()
     {
         const newitem ={product,qty};
         setCartItem((state)=>[...state,newitem])
-    } alert("Product Added Successfully!!");
+    }  alert("Product Added Successfully!!");
 
 }
 //  increase qty function
