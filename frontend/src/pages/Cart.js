@@ -7,11 +7,11 @@ export default function Cart({cartItem,setCartItem}){
    
    
     function increaseQty(item){
-        if(item.product.stock == item.qty){
+        if(item.product.stock === item.qty){
             return;
         }
-        const updateitem= cartItem.map((i)=>{
-        if(i.product._id == item.product._id){
+        const updateitem = cartItem.map((i)=>{
+        if(i.product._id === item.product._id){
             i.qty++;
         }
         return i;
@@ -22,7 +22,7 @@ export default function Cart({cartItem,setCartItem}){
     function decreaseQty(item){
         if(item.qty>1){
             const updateitem = cartItem.map((i)=>{
-                if(i.product._id == item.product._id){
+                if(i.product._id === item.product._id){
                     i.qty--;
                 }
                 return i;
@@ -33,11 +33,9 @@ export default function Cart({cartItem,setCartItem}){
 
         function removeitem(item){
       
-                const updateitem= cartItem.filter((i)=>{
-                    if(i.product._id !== item.product._id){
-                        return true;
-                    }                   
-                   })
+               const updateitem = cartItem.filter((i) => {
+                    return i.product._id !== item.product._id;
+                });
                    setCartItem(updateitem)
                 }
       
