@@ -16,7 +16,7 @@ export default function ProductDetails({cartItem,setCartItem}){
      
 function addToCard()
 {
-    const itemsExist = cartItem.find((item)=> item.product._id == product._id);
+    const itemsExist = cartItem.find((item)=> item.product._id === product._id);
     if(!itemsExist)
     {
         const newitem ={product,qty};
@@ -26,7 +26,7 @@ function addToCard()
 }
 //  increase qty function
  function increaseQty(){
-    if(product.stock == qty) // if avail product nd user qty = it will stop
+    if(product.stock === qty) // if avail product nd user qty = it will stop
     {
         return;
     }
