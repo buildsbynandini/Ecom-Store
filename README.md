@@ -135,4 +135,4 @@ Feel free to connect with me:
 - Portfolio: [buildsbynandini.github.io/PortFolio](https://buildsbynandini.github.io/PortFolio/)  
 - Email: nandinithedev@gmail.com
 
-Happy coding! 🚀
+ Happy coding! ✨
