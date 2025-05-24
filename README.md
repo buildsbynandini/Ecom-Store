@@ -1,4 +1,4 @@
-# 🛒 ecom-store
+# 🛒 Ecom-Store
 
 A full-stack responsive e-commerce web application built using the **MERN** stack (MongoDB, Express.js, React, Node.js). The application allows users to browse products, add them to a cart, and place orders. The UI is styled with Bootstrap for a clean and responsive experience.
 
@@ -49,62 +49,70 @@ Follow these steps to run the project locally:
 
 ---
 
-### 1️⃣ Clone the repository
-
-   ```bash
+1. **Clone the repository**
+ 
+    ```bash
    git clone https://github.com/buildsbynandini/Ecom-Store.git
    cd Ecom-Store
-    ```
+   ```
 
- Setup Backend
+ ### Backend Setup
 
-### Install dependencies
+2. **Install dependencies**
 
    ```bash
    cd backend
    npm install
    ```
 
-### Set up environment variables
+3. **Set up environment variables**
 
-```env
+ In the root folder of the backend, create a file named `.env`
+ Add the following line to it using your own MongoDB connection string:
+
+  ```env
    MONGO_URI=your_mongodb_connection_string
    PORT=5000
     ```
 
-### Start the backend server
+4. **Start the backend server**
 
-  ```bash
-  npm start
+    ```bash
+   npm start
    ```
 
- Setup Frontend
+ ### Frontend Setup
 
- ### Install dependencies
+ 5. **Install dependencies**
 
   ```bash
    cd frontend
    npm install
    ```
 
-### Set up environment variables
+6. **Set up environment variables**
 
-```env
+In the root folder of the frontend, create a file named `.env`
+ Add the following line:
+
+ ```env
    REACT_APP_API_URL=http://localhost:5000/api/p1
     ```
+ 
 
- ### Start the frontend app
+ 7. **Start the frontend app**
 
- ```bash
-  npm start
+```bash
+    npm start
    ```
+
 ---
 
  ## 🧪 Testing
 
 Once both the frontend and backend servers are running:
 
-1. Open your browser and go to: [http://localhost:3000](http://localhost:3000)
+1. Open your browser and go to: [http://localhost:4568](http://localhost:4568)
 2. Browse products and add a few items to your cart.
 3. Go to the cart page and place an order.
 4. ✅ Check your MongoDB database to confirm that the order data has been successfully stored.
