@@ -71,9 +71,9 @@ Follow these steps to run the project locally:
  Add the following line to it using your own MongoDB connection string:
 
   ```env
-   MONGO_URI=your_mongodb_connection_string
-   PORT=5000
-    ```
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+```
 
 4. **Start the backend server**
 
@@ -96,10 +96,9 @@ In the root folder of the frontend, create a file named `.env`
  Add the following line:
 
  ```env
-   REACT_APP_API_URL=http://localhost:5000/api/p1
-    ```
+ REACT_APP_API_URL=http://localhost:5000/api/p1
+```
  
-
  7. **Start the frontend app**
 
 ```bash
